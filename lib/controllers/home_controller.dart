@@ -6,7 +6,7 @@ class HomeController extends GetxController {
   RxString output = "".obs;
   getBalancedSubstrings(String S) {
     List<String> result = [];
-
+//abba
     // Function to check if a substring is balanced
     bool isBalanced(String substring) {
       Set<String> uniqueChars = Set.from(substring.split(''));
@@ -20,6 +20,7 @@ class HomeController extends GetxController {
     for (int i = 0; i < S.length; i++) {
       for (int j = i + 2; j <= S.length; j++) {
         String substring = S.substring(i, j);
+        //ab
         if (isBalanced(substring)) {
           if (result.isEmpty || substring.length > result[0].length) {
             result = [substring];
